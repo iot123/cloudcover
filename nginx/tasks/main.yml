@@ -1,0 +1,19 @@
+---
+# tasks file for nginx
+- name: install apps
+  apt: name=nginx update_cache=yes state=latest
+  notify: 
+    - Restart Nginx
+
+- name: changing index.html file
+  template: 
+     src: index.html.j2
+     dest: /usr/share/nginx/html/index.html
+     owner: root
+     owner: root
+     mode: 0755
+  notify:
+    - Restart Nginx
+ 
+  
+

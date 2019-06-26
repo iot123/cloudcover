@@ -1,0 +1,14 @@
+---
+- hosts: local
+  connection: local
+  gather_facts: no
+  tasks:
+
+      - name: Create a new EC2 key
+        ec2_key:
+            name: cc-interview-rahul
+            region: ap-south-1
+            aws_access_key: AKIARJ2L5QBLH4V3N3MS
+            aws_secret_key: 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
+            key_material: "{{ lookup('file', 'cc-interview-rahul.pub') }}"
+        register: ec2_key_result
