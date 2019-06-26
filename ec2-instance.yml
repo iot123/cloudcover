@@ -15,8 +15,8 @@
                assign_public_ip: true
             image_id: ami-06c4efeb2f3264d9b
             region: ap-south-1
-            aws_access_key: AKIARJ2L5QBLH4V3N3MS
-            aws_secret_key: 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
+            aws_access_key: XXXXXXXXXXXXXXXXXXXX
+            aws_secret_key: XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
         register: ec2_instance_result
       
      # - debug: 
