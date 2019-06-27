@@ -8,7 +8,7 @@
         ec2_key:
             name: cc-interview-rahul
             region: ap-south-1
-            aws_access_key: AKIARJ2L5QBLH4V3N3MS
-            aws_secret_key: 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
+            aws_access_key: XXXXXXXXXXXX
+            aws_secret_key: XXXXXXXXXXXXXXXXXXXXX
             key_material: "{{ lookup('file', 'cc-interview-rahul.pub') }}"
         register: ec2_key_result
